@@ -1,9 +1,8 @@
 :root {
   --first-page-color: #ffffff;
   --second-page-color: #2e2f42;
-  --third-page-color: #e5e5e5;
-  --fourth-title-color: #f4f4fd;
-  --fifth-title-color: #434455;
+  --third-page-color: #f4f4fd;
+  --first-text-color: #434455;
   --hover--color: #404bbf;
   --first--logo-color: #4d5ae5;
   --typical-lh: 1.5;
@@ -27,21 +26,18 @@ body {
   color: var(--second-page-color);
 }
 
-ul {
+.list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 /*---------------header-------------------*/
 
-.header {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: var(--typical-lh);
-  letter-spacing: 0.02em;
-}
-
 .header-logo {
-  color: var(--second-page-color);
-  font-family: "Raleway";
+  color: inherit;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -51,24 +47,28 @@ ul {
   color: var(--first--logo-color);
 }
 
-.header-link {
-  color: var(--second-page-color);
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
+/*the font is 700 because there is no 600*/
+.header-item {
+  font-weight: 700;
+  font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
+}
+
+.header-link {
+  color: inherit;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--hover--color);
 }
+.address-list {
+}
 
 .address-link {
-  color: var(--fifth-title-color);
+  color: var(--first-text-color);
   font-family: "inherit";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
@@ -84,7 +84,6 @@ ul {
   color: var(--first-page-color);
 }
 .hero-title {
-  font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -94,7 +93,7 @@ ul {
   background-color: var(--first--logo-color);
   color: inherit;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.04em;
@@ -104,6 +103,8 @@ ul {
   background-color: var(--hover--color);
 }
 
+/*---------------presentation-------------------*/
+
 .presentation-title {
   font-weight: 500;
   font-size: 20px;
@@ -112,25 +113,27 @@ ul {
 }
 
 .presentation-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
-  color: var(--fifth-title-color);
+  color: var(--first-text-color);
 }
 
+/*---------------projects-------------------*/
+
+
 .projects-title {
-  font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
 
+/*---------------team-------------------*/
+
 .team {
-  background-color: var(--fourth-title-color);
+  background-color: var(--third-page-color);
 }
+
 .team-title {
-  font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -144,12 +147,12 @@ ul {
 }
 
 .team-specialty {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   letter-spacing: 0.02em;
-  color: var(--fifth-title-color);
+  color: var(--first-text-color);
 }
+
+/*---------------footer-------------------*/
 
 .footer {
   background-color: var(--second-page-color);
@@ -161,14 +164,45 @@ ul {
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
 }
 
 .footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   letter-spacing: 0.02em;
   color: #e7e9fc;
+}
+
+/*---------------Portfolio-------------------*/
+
+.portfolio-btn {
+  background-color: var(--third-page-color);
+  color: var(--first--logo-color);
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--hover--color);
+  color: var(--first-page-color);
+}
+
+
+.image-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2x;
+  letter-spacing: 0.02em;
+  color: var(--second-page-color);
+}
+
+.image-category {
+  line-height: var(--typical-lh);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
 }
