@@ -26,6 +26,10 @@ body {
   color: var(--second-page-color);
 }
 
+button{
+  font-family: inherit; 
+}
+
 .list {
   list-style: none;
 }
@@ -67,9 +71,7 @@ body {
 
 .address-link {
   color: var(--first-text-color);
-  font-family: "inherit";
   font-style: normal;
-  font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
 }
@@ -133,6 +135,10 @@ body {
   background-color: var(--third-page-color);
 }
 
+.team-item {
+  background-color: var(--first-page-color);
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -178,7 +184,7 @@ body {
 .portfolio-btn {
   background-color: var(--third-page-color);
   color: var(--first--logo-color);
-  font-family: inherit, sans-serif;
+  /* font-family: "Roboto" , sans-serif;  */
   font-weight: 700;
   font-size: 16px;
   line-height: var(--typical-lh);
